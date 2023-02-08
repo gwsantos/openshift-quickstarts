@@ -54,7 +54,7 @@ public class ServletServer {
                     .setDeploymentName("test.war")
                     .addServlets(
                             servlet("MessageServlet", MessageServlet.class)
-                                    .addInitParam("message", "Hello from OpenShift, now with CI/CI Pipeline!")
+                                    .addInitParam("message", "Hello from OpenShift, now with CI/CD Pipeline and deployment instead of deploymentconfig!")
                                     .addMapping("/*"),
                             servlet("MyServlet", MessageServlet.class)
                                     .addInitParam("message", "MyServlet")
